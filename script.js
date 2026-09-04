@@ -19,7 +19,7 @@ const TOURS = [
     price: 399,
     rating: 4.8,
     badge: "BEST SELLER",
-    image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=900&auto=format&fit=crop",
+    image: "desert agafay.jpg",
     description: "À seulement 40 minutes de Marrakech, le désert d'Agafay offre des paysages lunaires de collines rocheuses. Une escapade parfaite pour ressentir l'immensité du désert sans le long trajet vers le Sahara.",
     program: [
       { time: "08:00", label: "Départ de votre hôtel à Marrakech" },
@@ -40,7 +40,7 @@ const TOURS = [
     price: 349,
     rating: 4.9,
     badge: "BEST SELLER",
-    image: "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=900&auto=format&fit=crop",
+    image: "chafchaoun.jpg",
     description: "Perdez-vous dans les ruelles bleutées de Chefchaouen, nichée dans les montagnes du Rif. Une journée dédiée à la photographie, à l'artisanat local et à l'atmosphère paisible de la médina.",
     program: [
       { time: "06:30", label: "Départ matinal" },
@@ -61,7 +61,7 @@ const TOURS = [
     price: 299,
     rating: 4.7,
     badge: "NOUVEAU",
-    image: "https://images.unsplash.com/photo-1597212720158-e3f4b8c69f0d?q=80&w=900&auto=format&fit=crop",
+    image: "marrakech.jpg",
     description: "Explorez la place Jemaa el-Fna, les souks colorés, les jardins Majorelle et les palais historiques au cœur de Marrakech, ville impériale pleine de vie.",
     program: [
       { time: "09:00", label: "Rendez-vous au centre-ville" },
@@ -82,7 +82,7 @@ const TOURS = [
     price: 1490,
     rating: 5.0,
     badge: "BEST SELLER",
-    image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=900&auto=format&fit=crop",
+    image: "marzouga.jpg",
     description: "Traversez l'Atlas, les gorges du Todra et les vallées du sud pour rejoindre les majestueuses dunes de Merzouga. Une nuit inoubliable sous les étoiles du Sahara.",
     program: [
       { time: "Jour 1", label: "Marrakech → Vallée du Dadès" },
@@ -101,7 +101,7 @@ const TOURS = [
     price: 399,
     rating: 4.6,
     badge: "NOUVEAU",
-    image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=900&auto=format&fit=crop",
+    image: "essaouira.jpg",
     description: "Découvrez la médina fortifiée d'Essaouira, son port de pêcheurs animé et ses plages venteuses, prisées des amateurs de surf et de kitesurf.",
     program: [
       { time: "08:00", label: "Départ" },
@@ -122,7 +122,7 @@ const TOURS = [
     price: 349,
     rating: 4.7,
     badge: "NOUVEAU",
-    image: "https://images.unsplash.com/photo-1544923246-77307dd654cb?q=80&w=900&auto=format&fit=crop",
+    image: "ouzoud.jpg",
     description: "Randonnez jusqu'au pied des cascades d'Ouzoud, les plus hautes du Maroc, et observez les singes magots dans leur habitat naturel.",
     program: [
       { time: "08:30", label: "Départ" },
@@ -143,7 +143,7 @@ const TOURS = [
     price: 449,
     rating: 4.8,
     badge: "BEST SELLER",
-    image: "https://images.unsplash.com/photo-1548261959-99f1e2b21c65?q=80&w=900&auto=format&fit=crop",
+    image: "atlas mouantains.jpg",
     description: "Randonnée dans les villages berbères de la vallée de l'Ourika, au cœur du Haut Atlas, avec ses cascades, ses terrasses cultivées et son air pur.",
     program: [
       { time: "08:00", label: "Départ de Marrakech" },
@@ -164,7 +164,7 @@ const TOURS = [
     price: 299,
     rating: 4.7,
     badge: "NOUVEAU",
-    image: "https://images.unsplash.com/photo-1548013146-1e93f34c95f4?q=80&w=900&auto=format&fit=crop",
+    image: "fesmeknes.jpg",
     description: "Plongez dans l'histoire du Maroc à travers les médinas classées à l'UNESCO de Fès et Meknès, entre tanneries millénaires et monuments impériaux.",
     program: [
       { time: "07:00", label: "Départ" },
@@ -179,12 +179,12 @@ const TOURS = [
 ];
 
 const DESTINATIONS = [
-  { name: "Marrakech", count: 6, image: "https://images.unsplash.com/photo-1597212720158-e3f4b8c69f0d?q=80&w=800&auto=format&fit=crop" },
-  { name: "Fès", count: 4, image: "https://images.unsplash.com/photo-1548013146-1e93f34c95f4?q=80&w=800&auto=format&fit=crop" },
-  { name: "Chefchaouen", count: 3, image: "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=800&auto=format&fit=crop" },
-  { name: "Merzouga", count: 5, image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=800&auto=format&fit=crop" },
-  { name: "Agafay", count: 3, image: "https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=800&auto=format&fit=crop" },
-  { name: "Essaouira", count: 4, image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop" }
+  { name: "Marrakech", count: 6, image: "marrakech.jpg" },
+  { name: "Fès", count: 4, image: "fesmeknes.jpg" },
+  { name: "Chefchaouen", count: 3, image: "chafchaoun.jpg" },
+  { name: "Merzouga", count: 5, image: "marzouga.jpg" },
+  { name: "Agafay", count: 3, image: "desert agafay.jpg" },
+  { name: "Essaouira", count: 4, image: "essaouira.jpg" }
 ];
 
 const CIRCUITS = [
@@ -217,10 +217,8 @@ const TESTIMONIALS = [
 const INSTAGRAM_IMAGES = [
   "https://images.unsplash.com/photo-1489493887464-892be6d1daae?q=80&w=500&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=500&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1597212720158-e3f4b8c69f0d?q=80&w=500&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=500&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=500&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1548261959-99f1e2b21c65?q=80&w=500&auto=format&fit=crop"
 ];
 
 /* ---------- STATE ---------- */
