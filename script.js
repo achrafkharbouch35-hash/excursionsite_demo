@@ -1,11 +1,11 @@
 /* =========================================================
-   NOMADIA TRAVEL — script.js
+  CHIHAJA TRAVEL — script.js
    ========================================================= */
 
 /* ---------- CONFIG ---------- */
 const CONFIG = {
     whatsapp: "212600000000",
-    instagram: "https://instagram.com/nomadia.travel"
+    instagram: "https://instagram.com/CHIHAJA.travel"
 };
 
 /* ---------- DATA ---------- */
@@ -210,7 +210,7 @@ const TESTIMONIALS = [
     name: "Sarah Johnson",
     country: "Royaume-Uni",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
-    text: "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement NOMADIA."
+    text: "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement CHIHAJA."
   }
 ];
 
@@ -224,7 +224,7 @@ const INSTAGRAM_IMAGES = [
 /* ---------- STATE ---------- */
 let currentFilter = "all";
 let currentSort = "recommended";
-let favorites = JSON.parse(localStorage.getItem("nomadia_favorites") || "[]");
+let favorites = JSON.parse(localStorage.getItem("CHHAJA_favorites") || "[]");
 let activeTour = null;
 let bookingQty = 2;
 
@@ -236,11 +236,11 @@ function buildWhatsappLink(message){
 }
 
 function defaultWhatsappMessage(){
-  return "Bonjour NOMADIA TRAVEL 👋\n\nJe souhaite avoir plus d'informations sur vos excursions.\n\nMerci.";
+  return "Bonjour CHIHAJA TRAVEL 👋\n\nJe souhaite avoir plus d'informations sur vos excursions.\n\nMerci.";
 }
 
 function tourWhatsappMessage(tour){
-  return `Bonjour NOMADIA TRAVEL 👋\n\nJe souhaite réserver :\n\nExcursion : ${tour.name}\nDate : \nNombre de personnes : \n\nMerci.`;
+  return `Bonjour CHIHAJA TRAVEL 👋\n\nJe souhaite réserver :\n\nExcursion : ${tour.name}\nDate : \nNombre de personnes : \n\nMerci.`;
 }
 
 /* ---------- INIT WHATSAPP LINKS ---------- */
@@ -437,7 +437,7 @@ function toggleFavorite(id){
   } else {
     favorites.push(id);
   }
-  localStorage.setItem("nomadia_favorites", JSON.stringify(favorites));
+  localStorage.setItem("CHIHAJA_favorites", JSON.stringify(favorites));
   updateFavCount();
   renderTours();
   renderFavDrawer();
@@ -527,7 +527,7 @@ function renderCircuits(){
 
   grid.querySelectorAll(".circuit-btn").forEach(btn=>{
     btn.addEventListener("click", ()=>{
-      const msg = `Bonjour NOMADIA TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
+      const msg = `Bonjour CHIHAJA TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
       window.open(buildWhatsappLink(msg), "_blank");
     });
   });
@@ -538,7 +538,7 @@ function renderInstagram(){
   const grid = document.getElementById("instagramGrid");
   grid.innerHTML = INSTAGRAM_IMAGES.map(src=>`
     <a class="insta-item" href="${CONFIG.instagram}" target="_blank" rel="noopener">
-      <img src="${src}" alt="Photo de voyage NOMADIA" loading="lazy">
+      <img src="${src}" alt="Photo de voyage CHIHAJA" loading="lazy">
       <span class="insta-icon">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06c1.06.05 1.79.22 2.43.47c.66.26 1.21.6 1.76 1.15c.55.55.9 1.1 1.15 1.76c.25.64.42 1.37.47 2.43c.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76a4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47c-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15a4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43c.26-.66.6-1.21 1.15-1.76a4.9 4.9 0 0 1 1.76-1.15c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2m0 1.8c-2.65 0-2.97.01-4.02.06c-.97.04-1.5.2-1.85.34c-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.14.35-.3.88-.34 1.85c-.05 1.05-.06 1.37-.06 4.02s.01 2.97.06 4.02c.04.97.2 1.5.34 1.85c.18.47.4.8.75 1.15s.68.57 1.15.75c.35.14.88.3 1.85.34c1.05.05 1.37.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.2 1.85-.34c.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.14-.35.3-.88.34-1.85c.05-1.05.06-1.37.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.97 3.81 14.65 3.8 12 3.8m0 3.06a5.14 5.14 0 1 1 0 10.28a5.14 5.14 0 0 1 0-10.28m0 1.8a3.34 3.34 0 1 0 0 6.68a3.34 3.34 0 0 0 0-6.68m5.34-1.96a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"/></svg>
       </span>
